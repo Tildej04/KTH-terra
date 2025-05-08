@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KTH-terra</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+    body {
+        background-color: 	#edf3fe;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        margin: 0;
+        padding-top: 100px;
+        color: #272f4b;
+        min-height: 100vh; /* vh = viewport height */
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 10 10px;
+    
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #272f4b;
+    }
+
+    li {
+        float: left;
+    }
+  
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+  
+    li a:hover {
+        background-color: #21213b;
+    }
+
+    .top-menu { /* Top menyn */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        background-color: #bbd4fe;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 100; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* skugga för att avsilja menyn */
+    }
+
+    .top-menu h1 { /* Format för rubriker i top menyn */
+        margin: 0;
+        font-size: 30px;            
+        line-height: 1.0;
+        font-family: 'Oswald', sans-serif;
+        color: #272f4b;
+    }
+        
+    .top-menu img { /* Format för bilder i top menyn */
+        height: 80px;
+        margin-right: 20px;
+    }
+
+    .menu-text h1 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.0;
+        font-family: 'Poppins', sans-serif;
+        color: #272f4b;
+    }
+    
+    .menu-text p {
+        margin: 0;
+        font-size: 14px;
+        color: #272f4b;
+    }
+
+    .header { /* Format för rubriker*/
+        padding: 10px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+    .header h1 { /* Format för rubriker med desing h1 */
+        font-size: 40px;
+        padding: 50px;
+   
+    }
+
+    .header p { /* Format för brödtext */
+        font-size: 18px;
+        margin: 0 auto; 
+        max-width: 700px;   
+        text-align: center;   
+        padding: 5px 5px;  
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .site-footer {
+        padding: 20px;
+        margin-top: auto;
+        font-size: 14px;
+        background-color: #272f4b;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+      
+    .site-footer a {
+        color: #98c9f7;
+        text-decoration: none;
+    }
+      
+    /* Texten blir understrycken när den pekas på */
+    .site-footer a:hover {
+        text-decoration: underline;
+    }
+    /* Anpassad för mobil */
+    @media screen and (max-width: 768px) { 
+        .top-menu {
+          flex-direction: column;
+          height: auto;
+          text-align: center;
+        }
+    }
+
+    .instructions {
+        max-width: 700px;
+        margin: 40px auto; 
+        background-color: #dbe9ff; 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        text-align: left;
+    }
+
+    </style>
+</head>
+
+<body> 
+
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+
+    </ul>
+
+    <div class="top-menu">
+        <img src="KTH-logo.png.webp">
+      <div class="menu-text">
+        <h1>KTH-Terra</h1>
+        <p>Kajsa Garpenbeck & Tilde Josefsson</p>
+      </div>
+    </div>
+
+    <div class="instructions">
+        <h2> Spelregler: </h2>
+        <p> 1. Klicka på <strong>"Starta spel"</strong>-knappen.</p>
+        <p> 2. Du får se ett namn på en byggnad på KTH</p>
+        <p> 3. Klicka på rätt plats på kartan så fort du kan!</p>
+        <p> Lycka till! </p>
+    </div>
+
+
+    <div class="instructions">
+        <h2> Om KTH-terra: </h2>
+        <p> KTh-terra är ett spel som skapades för att hjälpa studenter att hitta bättre på campus. </p>
+
+
+    </div>    
+
+    <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 KTH-Terra</p>
+          <p>Skapat av Kajsa Garpenbeck & Tilde Josefsson</p></p>
+          <p><a href=kontakt.html>Kontakt</a></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
