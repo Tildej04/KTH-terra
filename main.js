@@ -8,4 +8,3 @@ var config = {
     parent: 'spel-ruta',  // <--- kopplar till div:en
 };
 
-var game = new Phaser.Game(config);
