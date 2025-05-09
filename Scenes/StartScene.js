@@ -7,16 +7,16 @@ class StartScene extends Phaser.Scene {
 
     preload ()
     {
-        this.load.image('karta', './assets/karta.gif');
+        this.load.image('karta', './assets/karta.png');
+
     }
 
     create() {
         
-        const bg = this.add.image(this.scale.width / 2, this.scale.height / 2, 'karta') // Centrerad bild
-            .setOrigin(0.5) // Gör bilden centrerad
+        const bg = this.add.image(0, 0, 'karta')
+            .setOrigin(0)
             .setDisplaySize(this.scale.width, this.scale.height) // Fyll hela skärmen
             .setAlpha(0.3); // Justera transparens
-
 
         const game = this.add.text(150, 180, 'KTH-terra', {
             fill: '#0d3a67',
